@@ -19,10 +19,9 @@ if count <= 3:  # Проверка кол-ва сторон
         if int(input_string) == 0:  # проверка на 0
             print('Введен "0"! Будьте внимательны!')
             quit()
-        a = input_string
         type_str = 'Круг:'
         rad_str = 'Радиус = '
-        radius = int(a)
+        radius = int(input_string)
         perimetr = 2 * 3.14 * radius
         sq = 3.14 * (radius * radius)
         print(f'{type_str} {rad_str} {radius}; {perim_str} {round(perimetr, 2)}, {squere_str} {round(sq, 2)}')
@@ -56,7 +55,6 @@ if count <= 3:  # Проверка кол-ва сторон
             type_str = 'Треугольник:'
             perimetr = side_a + side_b + side_c
             p_p = perimetr / 2
-            # print('p_p= ', p_p)
             sq = (p_p * ((p_p - side_a) * (p_p - side_b) * (p_p - side_c))) ** 0.5
             print(
                 f'{type_str} {side_a_str} {side_a}, {side_b_str} {side_b}, {side_c_str} {side_c}; {perim_str} {round(perimetr, 2)}, {squere_str} {round(sq, 2)}')
